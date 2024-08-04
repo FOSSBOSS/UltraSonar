@@ -18,7 +18,8 @@ int pos = 0;    // servo position
 void setup() {
   Serial.begin(115200);
   myservo.attach(11); 
-  
+  pinMode(TRIG_PIN_1, OUTPUT);
+  pinMode(ECHO_PIN_1, INPUT);
   }
 /* polar conversion:
 r, theta = 
